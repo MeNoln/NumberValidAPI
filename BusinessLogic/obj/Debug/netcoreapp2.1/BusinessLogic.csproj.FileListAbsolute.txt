@@ -1,0 +1,9 @@
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\bin\Debug\netcoreapp2.1\BusinessLogic.deps.json
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\bin\Debug\netcoreapp2.1\BusinessLogic.dll
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.AssemblyInfo.cs
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\bin\Debug\netcoreapp2.1\BusinessLogic.pdb
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.dll
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.pdb

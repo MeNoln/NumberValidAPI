@@ -1,0 +1,14 @@
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\bin\Debug\netcoreapp2.1\NumberValidAPI.deps.json
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\bin\Debug\netcoreapp2.1\NumberValidAPI.runtimeconfig.json
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\bin\Debug\netcoreapp2.1\NumberValidAPI.runtimeconfig.dev.json
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\bin\Debug\netcoreapp2.1\NumberValidAPI.dll
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\bin\Debug\netcoreapp2.1\NumberValidAPI.pdb
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\obj\Debug\netcoreapp2.1\NumberValidAPI.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\obj\Debug\netcoreapp2.1\NumberValidAPI.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\obj\Debug\netcoreapp2.1\NumberValidAPI.RazorAssemblyInfo.cache
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\obj\Debug\netcoreapp2.1\NumberValidAPI.RazorAssemblyInfo.cs
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\obj\Debug\netcoreapp2.1\NumberValidAPI.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\obj\Debug\netcoreapp2.1\NumberValidAPI.AssemblyInfo.cs
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\obj\Debug\netcoreapp2.1\NumberValidAPI.RazorTargetAssemblyInfo.cache
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\obj\Debug\netcoreapp2.1\NumberValidAPI.dll
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\obj\Debug\netcoreapp2.1\NumberValidAPI.pdb
