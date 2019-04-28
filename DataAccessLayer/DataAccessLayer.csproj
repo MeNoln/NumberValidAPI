@@ -13,11 +13,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="EF\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>
