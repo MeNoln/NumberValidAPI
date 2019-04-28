@@ -12,3 +12,8 @@ C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\obj\Debug\n
 C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\obj\Debug\netcoreapp2.1\NumberValidAPI.RazorTargetAssemblyInfo.cache
 C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\obj\Debug\netcoreapp2.1\NumberValidAPI.dll
 C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\obj\Debug\netcoreapp2.1\NumberValidAPI.pdb
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\bin\Debug\netcoreapp2.1\BusinessLogic.dll
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\bin\Debug\netcoreapp2.1\DataAccessLayer.dll
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\bin\Debug\netcoreapp2.1\BusinessLogic.pdb
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\bin\Debug\netcoreapp2.1\DataAccessLayer.pdb
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\NumberValidAPI\obj\Debug\netcoreapp2.1\NumberValidAPI.csproj.CopyComplete

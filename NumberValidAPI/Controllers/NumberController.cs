@@ -14,7 +14,10 @@ namespace NumberValidAPI.Controllers
         [Route("validate")]
         public ActionResult<string> GetNumInfo([FromQuery] string number)
         {
-            return "s";
+            string n = "def";
+            if (!string.IsNullOrEmpty(number))
+                n = number;
+            return n;
         }
         
     }

@@ -7,3 +7,6 @@ C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\obj\Debug\ne
 C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\bin\Debug\netcoreapp2.1\BusinessLogic.pdb
 C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.dll
 C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.pdb
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\bin\Debug\netcoreapp2.1\DataAccessLayer.dll
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\bin\Debug\netcoreapp2.1\DataAccessLayer.pdb
+C:\Users\PC\Desktop\PhoneStringPattern\NumberValidAPI\BusinessLogic\obj\Debug\netcoreapp2.1\BusinessLogic.csproj.CopyComplete
