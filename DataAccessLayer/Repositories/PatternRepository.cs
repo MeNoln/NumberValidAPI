@@ -7,12 +7,17 @@ using System.Text;
 
 namespace DataAccessLayer.Repositories
 {
-    public class PatternRepository : IRepository<Patterns>
+    public class PatternRepository : IRepository<Patterns>, IPatternRepository
     {
         private ApplicationContext db;
         public PatternRepository(ApplicationContext db)
         {
             this.db = db;
+        }
+
+        public IEnumerable<Patterns> GetAllCountries()
+        {
+            return db.Patterns.ToList();
         }
 
         public Patterns GetCurrent(Patterns context)

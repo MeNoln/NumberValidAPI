@@ -27,6 +27,16 @@ namespace DataAccessLayer
             }
         }
 
+        public IPatternRepository CurrentPattern
+        {
+            get
+            {
+                if (patRepo == null)
+                    patRepo = new PatternRepository(db);
+                return patRepo;
+            }
+        }
+
         public IRepository<OperatorCodes> OpCodesRepo
         {
             get

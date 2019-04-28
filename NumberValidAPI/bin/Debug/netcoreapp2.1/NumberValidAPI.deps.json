@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.1": {
       "NumberValidAPI/1.0.0": {
         "dependencies": {
+          "AutoMapper": "8.1.0",
           "BusinessLogic": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
