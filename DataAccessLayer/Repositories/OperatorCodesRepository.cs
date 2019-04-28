@@ -8,7 +8,7 @@ using System.Text;
 
 namespace DataAccessLayer.Repositories
 {
-    public class OperatorCodesRepository : IRepository<OperatorCodes>
+    public class OperatorCodesRepository : IOpCodesRepo
     {
         private ApplicationContext db;
         public OperatorCodesRepository(ApplicationContext db)
@@ -16,9 +16,16 @@ namespace DataAccessLayer.Repositories
             this.db = db;
         }
 
-        public OperatorCodes GetCurrent(OperatorCodes context)
+        public OperatorCodes GetCurrent(int id)
         {
-            var model = db.OperatorCodes.Include(op => op.Operators).Where(code => code.OperCode == context.OperCode).FirstOrDefault();
+            var model = db.OperatorCodes.Find(id);
+            return model;
+        }
+
+        public OperatorCodes Get(string number)
+        {
+            var model = db.OperatorCodes.Include(op => op.Operators).Where(code => code.OperCode == number).FirstOrDefault();
+
             return model;
         }
     }

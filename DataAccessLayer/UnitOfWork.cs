@@ -37,7 +37,7 @@ namespace DataAccessLayer
             }
         }
 
-        public IRepository<OperatorCodes> OpCodesRepo
+        public IOpCodesRepo OpCodesRepo
         {
             get
             {
@@ -46,7 +46,7 @@ namespace DataAccessLayer
                 return opcodeRepo;
             }
         }
-
+        
         public void Save()
         {
             db.SaveChanges();

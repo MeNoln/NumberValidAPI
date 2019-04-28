@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace BusinessLogic.Entities
+namespace NumberValidAPI.Models
 {
-    public class AnswerBL
+    public class AnswerModel
     {
         public string number { get; set; }
         public string e164format { get; set; }

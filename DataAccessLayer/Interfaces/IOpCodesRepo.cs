@@ -4,8 +4,9 @@ using System.Text;
 
 namespace DataAccessLayer.Interfaces
 {
-    public interface IRepository<T> where T : class
+    public interface IOpCodesRepo
     {
-        T GetCurrent(int id);
+        OperatorCodes GetCurrent(int id);
+        OperatorCodes Get(string number);
     }
 }

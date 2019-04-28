@@ -20,9 +20,16 @@ namespace DataAccessLayer.Repositories
             return db.Patterns.ToList();
         }
 
-        public Patterns GetCurrent(Patterns context)
+        public Patterns GetCurrent(int id)
         {
-            var model = db.Patterns.Where(code => code.CountryCode == context.CountryCode).FirstOrDefault();
+            var model = db.Patterns.Find(id);
+            return model;
+        }
+
+        public Patterns Get(int code)
+        {
+            var model = db.Patterns.Where(c => c.CountryCode == code).FirstOrDefault();
+
             return model;
         }
     }

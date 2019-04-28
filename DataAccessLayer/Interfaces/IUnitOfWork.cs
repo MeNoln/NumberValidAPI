@@ -8,7 +8,6 @@ namespace DataAccessLayer.Interfaces
     {
         IRepository<Patterns> PatternsRepo { get; }
         IPatternRepository CurrentPattern { get; }
-        IRepository<OperatorCodes> OpCodesRepo { get; }
         void Save();
     }
 }

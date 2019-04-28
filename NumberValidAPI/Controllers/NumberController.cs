@@ -15,12 +15,15 @@ namespace NumberValidAPI.Controllers
     public class NumberController : Controller
     {
         [Route("validate")]
-        public ActionResult<string> GetNumInfo([FromQuery] string number)
+        public JsonResult GetNumInfo([FromQuery] string number)
         {
             if (string.IsNullOrEmpty(number))
-                return "def";
-            
-            return number;
+                return Json("def");
+            using (var db = new BL())
+            {
+                AnswerModel answer = Mapper.Map<AnswerModel>(db.GetInfo(number));
+                return Json(answer);
+            }
         }
 
         [Route("countries")]
