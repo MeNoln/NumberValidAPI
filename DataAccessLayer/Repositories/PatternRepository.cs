@@ -1,9 +1,11 @@
 ﻿using DataAccessLayer.EF;
 using DataAccessLayer.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories
 {
@@ -15,9 +17,9 @@ namespace DataAccessLayer.Repositories
             this.db = db;
         }
 
-        public IEnumerable<Patterns> GetAllCountries()
+        public async Task<IEnumerable<Patterns>> GetAllCountries()
         {
-            return db.Patterns.ToList();
+            return await db.Patterns.ToListAsync();
         }
 
         public Patterns GetCurrent(int id)
@@ -26,9 +28,9 @@ namespace DataAccessLayer.Repositories
             return model;
         }
 
-        public Patterns Get(int code)
+        public async Task<Patterns> Get(int code)
         {
-            var model = db.Patterns.Where(c => c.CountryCode == code).FirstOrDefault();
+            var model = await db.Patterns.Where(c => c.CountryCode == code).FirstOrDefaultAsync();
 
             return model;
         }

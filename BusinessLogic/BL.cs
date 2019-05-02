@@ -4,6 +4,7 @@ using DataAccessLayer;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace BusinessLogic
 {
@@ -15,21 +16,21 @@ namespace BusinessLogic
             db = new UnitOfWork();
         }
 
-        public AnswerBL GetInfo(string number)
+        public async Task<AnswerBL> GetInfo(string number)
         {
             if (number.Length < 9)
                 return new AnswerBL { valid = false};
 
-            string formatednumber = formatToCountryCodeOperatorCode(number);
+            string formatednumber = formatOperatorCodeToCountryCode(number);
 
-            var operators = db.OpCodesRepo.Get(formatednumber);
+            var operators = await db.OpCodesRepo.Get(formatednumber);
 
             if (operators == null)
                 return new AnswerBL { valid = false };
 
             int countryCode = operators.CoutryCode;
 
-            var patternModel = db.CurrentPattern.Get(countryCode);
+            var patternModel = await db.CurrentPattern.Get(countryCode);
 
             string operatorCode = GiveOperatorCode(patternModel.CountryCode.ToString(), operators.OperCode);
             string otherNumbers = getLastSevenNumbers(operators.OperCode, number);
@@ -50,11 +51,11 @@ namespace BusinessLogic
             return answer;
         }
 
-        public IEnumerable<SupportedCountries> GetCountries()
+        public async Task<IEnumerable<SupportedCountries>> GetCountries()
         {
             List<SupportedCountries> list = new List<SupportedCountries>();
             
-            foreach (var item in db.CurrentPattern.GetAllCountries())
+            foreach (var item in await db.CurrentPattern.GetAllCountries())
                 list.Add(new SupportedCountries { Country = item.Country});
 
             return list;
@@ -65,7 +66,7 @@ namespace BusinessLogic
             db.Dispose();
         }
 
-        private string formatToCountryCodeOperatorCode(string number)
+        private string formatOperatorCodeToCountryCode(string number)
         {
             char[] arr = number.ToCharArray();
             string res = string.Empty;

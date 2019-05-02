@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories
 {
@@ -22,9 +23,9 @@ namespace DataAccessLayer.Repositories
             return model;
         }
 
-        public OperatorCodes Get(string number)
+        public async Task<OperatorCodes> Get(string number)
         {
-            var model = db.OperatorCodes.Include(op => op.Operators).Where(code => code.OperCode == number).FirstOrDefault();
+            var model = await db.OperatorCodes.Include(op => op.Operators).Where(code => code.OperCode == number).FirstOrDefaultAsync();
 
             return model;
         }
