@@ -6,6 +6,7 @@ namespace BusinessLogic.Entities
 {
     public class AnswerBL
     {
+        public bool valid { get; set; }
         public string number { get; set; }
         public string e164format { get; set; }
         public string internationalFormat { get; set; }

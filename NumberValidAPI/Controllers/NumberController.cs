@@ -22,6 +22,12 @@ namespace NumberValidAPI.Controllers
             using (var db = new BL())
             {
                 AnswerModel answer = Mapper.Map<AnswerModel>(db.GetInfo(number));
+
+                if (answer.valid == false)
+                    return Json(new FalseValid { valid = false,
+                        message = "Check your number, it may have some errors, and be sure that you wrote it without + at the start. " +
+                        "And check supported countries(use api/number/countries path), maybe we don't support your country." });
+
                 return Json(answer);
             }
         }

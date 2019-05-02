@@ -17,9 +17,15 @@ namespace BusinessLogic
 
         public AnswerBL GetInfo(string number)
         {
+            if (number.Length < 9)
+                return new AnswerBL { valid = false};
+
             string formatednumber = formatToCountryCodeOperatorCode(number);
 
             var operators = db.OpCodesRepo.Get(formatednumber);
+
+            if (operators == null)
+                return new AnswerBL { valid = false };
 
             int countryCode = operators.CoutryCode;
 
@@ -29,6 +35,7 @@ namespace BusinessLogic
             string otherNumbers = getLastSevenNumbers(operators.OperCode, number);
             AnswerBL answer = new AnswerBL
             {
+                valid = true,
                 number = number,
                 e164format = $"+{number}",
                 internationalFormat = $"+{patternModel.CountryCode} {operatorCode}-{otherNumbers}",
